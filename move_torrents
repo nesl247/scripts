@@ -1,0 +1,8 @@
+#!/bin/sh
+source="${HOME}/Downloads"
+target="${HOME}/Dropbox/Misc/Torrents"
+
+for x in $(ls $source | grep .torrent)
+do
+	mv ${source}/${x} ${target}/$(basename $x)
+done
