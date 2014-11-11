@@ -2,7 +2,7 @@
 source="${HOME}/Downloads"
 target="${HOME}/Dropbox/Misc/Torrents"
 
-for x in $(ls $source | grep .torrent)
+for x in ${source}/*.torrent
 do
-	mv ${source}/${x} ${target}/$(basename $x)
+	mv ${x} ${target}/$(basename $x)
 done
