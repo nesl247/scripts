@@ -1,0 +1,13 @@
+#!/bin/sh
+location=/Users/harrison/Library/Application\ Support/Dock/desktoppicture.db
+temp=/Users/harrison/Library/Application\ Support/Dock/desktoppicture.db.tmp
+
+if test -f "${temp}"; then
+	echo "Switching to user wallpaper"
+	mv "${temp}" "${location}"
+elif test -f "${location}"; then
+	echo "Switching to default wallpaper"
+        mv "${location}" "${temp}"
+fi
+
+killall Dock

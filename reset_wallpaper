@@ -1,3 +1,0 @@
-#!/bin/sh
-rm /Users/harrison/Library/Application\ Support/Dock/desktoppicture.db
-killall Dock
