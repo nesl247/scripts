@@ -4,5 +4,7 @@ target="${HOME}/Dropbox/Misc/Torrents"
 
 for x in ${source}/*.torrent
 do
-	mv "${x}" "${target}/$(basename $x)"
+	if test -f "${x}"; then
+		mv "${x}" "${target}"/$(basename "${x}")
+	fi
 done
