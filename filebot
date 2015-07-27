@@ -1,0 +1,18 @@
+#!/bin/sh
+file=${1}
+
+if test -f $(dirname $file); then
+	file=$(dirname $file)
+fi
+
+/usr/bin/filebot \
+	-script fn:amc \
+	--output "/media/Storage/" \
+	--log-file amc.log \
+	--action copy \
+	--conflict auto \
+	-non-strict \
+	--def "ut_dir=${file}" \
+	clean=y \
+	"seriesFormat=/media/Storage/TV Shows/{n}/Season {s}/{n} - {s}x{e.pad(2)} - {t}" \
+	"ut_kind=multi"
