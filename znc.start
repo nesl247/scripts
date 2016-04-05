@@ -1,2 +1,0 @@
-#!/bin/sh
-sudo su znc-admin -c znc
