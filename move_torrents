@@ -1,6 +1,6 @@
 #!/bin/sh
 source="${HOME}/Downloads"
-target="${HOME}/Google Drive/Misc/Torrents"
+target="${HOME}/Library/Mobile\ Documents/com~apple~CloudDocs"
 
 for x in ${source}/*.torrent
 do
