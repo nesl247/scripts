@@ -1,2 +1,2 @@
 #!/bin/sh
-php -dzend_extension=/usr/local/opt/php71-xdebug/xdebug.so $@
+php -dzend_extension=/usr/local/opt/php72-xdebug/xdebug.so $@
